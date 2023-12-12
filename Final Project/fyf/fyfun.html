@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  
+	I360 Web Design
+	Owl Carousel 2.3.4
+	https://owlcarousel2.github.io/OwlCarousel2/
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find Your Fun</title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css">
+
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="plugins/owl/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="plugins/owl/assets/owl.carousel.min.css">
+
+	<!-- Custom styles -->
+	<!-- Make sure your styles are last - otherwise you won't be able to modify anything -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">	
+</head>
+
+<body>
+	<head>
+        <div id="tag"></div>
+    </head>
+	<nav>
+        <ul>
+			<ul>
+				<img class="nav-logo" src="images/colorpalette.png" alt="logo">
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="../vaultpub.html">THE VAULT PUB</a></li>
+				<li><a href="../enjay.html">ENJAY</a></li>
+				<li><a href="fyfun.html">FIND YOUR FUN</a></li>
+				<li><a href="../capstone.html">CAPSTONE</a></li>
+			</ul>
+        </ul>
+    </nav>
+    <div class="vertical">
+        <img class="verticaltitle" src="images/findyourfun.png" alt="logo">
+    </div>
+    <div class="main">
+    <h1>Find Your Fun</h1>
+        <p> "Find Your Fun" (FYF) holds a special place as one of my initial projects with IU Student Affairs Marketing. This project  centered around a recreational festival dedicated to promoting positivity and spreading information about health and overall well-being. The design for FYF was intentionally simplistic, aiming for a colorful and inviting aesthetic akin to popular trends in visual communication. The project involved the creation of diverse promotional materials, including eye-catching lawn signs, engaging digital ads, vibrant stickers, and merchandise like t-shirts and tote bags. Each element of the design was carefully crafted to resonate with the target audience, encapsulating the essence of the festival's cheerful and inclusive atmosphere.</p>
+	</div>
+	<figure>
+		<img src="images/fyf7.png" alt="fyfad">
+		<figcaption>FYF Event Ad Design for Spring 2023 at IU.</figcaption>
+	</figure>
+
+	<div class="gallery">
+		<h1>FYF Event Gallery</h1>
+		<div class="owl-carousel owl-theme">
+			<a href="#"><img src="images/fyf1.JPEG" alt="petting dog"></a>
+			<a href="#"><img src="images/fyf2.JPEG" alt="group pic"></a>
+			<a href="#"><img src="images/fyf3.JPEG" alt="bubble"></a>
+			<a href="#"><img src="images/fyf4.JPEG" alt="lawn sign"></a>
+			<a href="#"><img src="images/fyf5.JPEG" alt="tote bag"></a>
+			<a href="#"><img src="images/fyf8.jpg" alt="jumping rope"></a>
+			<a href="#"><img src="images/fyf9.jpg" alt="dog"></a>
+		</div>
+	</div>
+	<!--CREDIT: Owl Carousel LAB: Web Design 360-->
+	<!-- Owl Carousel JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="plugins/owl/owl.carousel.min.js"></script>
+
+	<!-- To set the carousel to be responsive: 
+		 https://owlcarousel2.github.io/OwlCarousel2/demos/responsive.html -->
+	<script>
+		$(document).ready(function () {
+			$(".owl-carousel").owlCarousel({
+				items: 1,
+				margin: 10,
+				loop: true,
+				responsiveClass: true,
+				responsiveRefreshRate: 100,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					600: {
+						items: 2,
+						nav: true
+					},
+					1000: {
+						items: 4,
+						nav: true,
+						loop: false
+					}
+				},
+				nav: true
+			});
+		});
+	</script>
+</body>
+
+</html>

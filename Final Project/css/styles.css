@@ -1,0 +1,217 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  I360 Styles Starter
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* RWD tag to visually indicate media query breaks */
+/*Credit to Project 5 code: I liked this element*/
+#tag {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background-color: #CC0000;
+  z-index: 101;
+}
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  UTILITIES
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* no break - example; optional to keep */
+.nobr {
+  white-space: nowrap;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Colors
+  #ede0c7-tan
+  #292b33-blue
+  #ff3352 pink/red
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+TYPOGRAPHY
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 800;
+  color: #ff3352;
+}
+h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  color: #ff3352;
+}
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #292b33;
+}
+.comp{
+  font-weight: 800;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Content
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.image-container {
+  padding-top: 00px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+.image-grid img {
+  width: 20%; /* Adjust the width of the images to fit two in a row */
+  max-width: 200px; /* Set a maximum width for responsiveness */
+  height: auto;
+  margin-bottom: 20px; /* Add some bottom margin for separation */
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  NAVIGATION
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+ nav {
+  /* fixed position - black bkg color */
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: #282c34;
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+nav li {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  margin-right: 50px;
+}
+nav a{
+  text-decoration: none;
+  color: #f7efdf;
+  font-weight: bold;
+}
+nav li :hover {
+  color: #ff3452;
+}
+.nav-logo {
+  width: 120px;
+  margin-right: 50px;
+}
+.header1{
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  VERTICAL TITLES
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.vertical{
+  position: fixed;
+  padding-left: 10px;
+  z-index: 100;
+}
+.verticaltitle{
+  width: 120px;
+}
+.main{
+  margin: 100px;
+  padding-left: 75px;
+}
+.home header {
+  position: relative;
+  margin-top: 70px;
+  padding-left: 175PX;
+  height: 400px;
+  background-image: url(../images/pattern.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+figure {
+  max-width: 100%; /* Ensures the figure does not exceed the width of its container */
+}
+/* Style for the image inside the figure */
+figure img {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  height: auto;
+}
+/* Style for the figcaption */
+figcaption {
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 100;
+  font-style: italic;
+}
+.image-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-around; /* Horizontally distribute items with space around */
+  margin-top: 20px; /* Add some top margin for separation */
+}
+.image-gridd {
+  display: flex;
+  flex-wrap: ; /* Allow items to wrap to the next line */
+  justify-content: space-around; /* Horizontally distribute items with space around */
+  margin-top: 20px; /* Add some top margin for separation */
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ ARTICLE: Head Shot
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.headshot {
+  width: 100%;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  MEDIA QUERIES
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  #tag { background-color: #FF9900; }
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  #tag { background-color: #00AA88; }
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  #tag { background-color: #674EA7; }
+  
+
+}

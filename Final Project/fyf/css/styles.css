@@ -1,0 +1,149 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* RWD tag to visually indicate media query breaks */
+/*Credit to Project 5 code: I liked this element*/
+#tag {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background-color: #CC0000;
+  z-index: 101;
+}
+
+/* Utilities */
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* STRUCTURE */
+
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    color: #ff3352;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+  }
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  NAVIGATION
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+ nav {
+    /* fixed position - black bkg color */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: #282c34;
+    padding: 10px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  nav li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+  }
+  nav a{
+    text-decoration: none;
+    color: #f7efdf;
+    font-weight: bold;
+  }
+  nav li :hover {
+    color: #ff3452;
+  }
+  .nav-logo {
+    width: 120px;
+    margin-right: 50px;
+  }
+  .header1{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+  }
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+VERTICAL TITLES
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  .vertical{
+    position: fixed;
+    margin-top: 90px;
+  }
+  .verticaltitle{
+    width: 120px;
+  }
+  .main{
+    padding-top: 100px;
+    padding-left: 175px;
+  }
+
+  figure {
+    max-width: 80%; /* Ensures the figure does not exceed the width of its container */
+    padding-left: 135px;
+  }
+
+/* Style for the image inside the figure */
+figure img {
+    width: 100%; /* Makes the image take up 100% of the width of the figure */
+    height: auto; /* Maintains the aspect ratio of the image */
+    /* You can also use max-width or max-height if you want to set a maximum size */
+}
+
+/* Style for the figcaption */
+figcaption {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+    font-style: italic;
+    text-align: right;
+}
+  
+/* CAROUSEL */
+.owl-carousel a:hover img {
+    opacity: 0.95 !important;
+}
+.owl-next span,
+.owl-prev span {
+    font-size: 200%;
+    font-weight: bold;
+    color: #ff3352;
+}
+.gallery {
+  max-width: 1020px;
+  padding-left: 175px;
+}
+/* MEDIA QUERIES */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #tag { background-color: #FF9900; }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #tag { background-color: #00AA88; }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #tag { background-color: #674EA7; }
+}
